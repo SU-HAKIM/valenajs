@@ -1,0 +1,29 @@
+{
+  "name": "valenajs",
+  "version": "1.0.0",
+  "description": "using nalena javascript with sass",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SU-HAKIM/valenajs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SU-HAKIM/valenajs/issues"
+  },
+  "homepage": "https://github.com/SU-HAKIM/valenajs#readme",
+  "devDependencies": {
+    "@snowpack/plugin-babel": "^2.1.6",
+    "@snowpack/plugin-sass": "^1.3.0",
+    "snowpack": "^3.0.13"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.3.3"
+  }
+}
