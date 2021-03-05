@@ -1,24 +1,23 @@
-$color:green;
+// configs
+@use "./variables"as color;
+// partials
+@use "./card";
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+
+body {
+    background-color: color.set-color(light);
     font-family: Roboto;
 }
 
-.container {
-    width: 1200px;
-    margin: auto;
+a {
+    text-decoration: none;
+}
 
-    .row {
-        width: 100%;
-
-        .col-lg-4 {
-            width: (1200 / 4) * 1px;
-            background-color: #0df2c9;
-            color: black;
-            padding: 10px 5px;
-        }
-    }
+li {
+    list-style: none;
 }

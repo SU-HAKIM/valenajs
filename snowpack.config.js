@@ -2,7 +2,8 @@
 module.exports = {
     plugins: [
         /* ... */
-        '@snowpack/plugin-sass', '@snowpack/plugin-babel',
+        '@snowpack/plugin-sass',
+        '@snowpack/plugin-babel'
     ],
     "mount": {
         "src": "/dist/",
