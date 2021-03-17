@@ -1,7 +1,12 @@
-// configs
-@use "./variables"as color;
-// partials
-@use "./card";
+//config files
+@use "./file/variables"as color;
+@use "./file/utilities";
+// partials files
+@use "./header";
+@use "./landing";
+@use "./register";
+@use "./login";
+@use "./developer";
 
 * {
     padding: 0px;
@@ -10,14 +15,21 @@
 }
 
 body {
-    background-color: color.set-color(light);
-    font-family: Roboto;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
 }
 
 a {
     text-decoration: none;
+    color: color.color(primary);
 }
 
 li {
     list-style: none;
+}
+
+img {
+    width: 100%;
 }

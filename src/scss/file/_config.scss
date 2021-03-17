@@ -1,0 +1,54 @@
+@use "./variables"as color;
+
+@mixin flexing($direction, $justify, $align) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin griding($justify, $align) {
+    display: grid;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin responsiveA($width) {
+    @media screen and (max-width:$width) {
+        @content
+    }
+}
+
+;
+
+@mixin responsiveB($width) {
+    @media screen and (min-width:$width) {
+        @content
+    }
+}
+
+;
+
+@mixin transition($property, $duration, $timing-function) {
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+}
+
+;
+
+@function set-text-color($color) {
+    @if(lightness($color)>50) {
+        @return #333;
+    }
+
+    @else {
+        @return #fff;
+    }
+}
+
+@mixin set-bg($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}

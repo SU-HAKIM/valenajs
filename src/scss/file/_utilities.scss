@@ -1,0 +1,154 @@
+@use "./config"as *;
+@use "./variables"as *;
+
+//container
+.container {
+    max-width: property(container);
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+//Text styles
+.x-large {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.large {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: #d5d2d2;
+}
+
+.text-primary {
+    color: color(primary);
+}
+
+.round-img {
+    border-radius: 50%;
+}
+
+//Background
+.bg {
+    &-primary {
+        @include set-bg(color(primary))
+    }
+
+    &-light {
+        @include set-bg(color(light))
+    }
+
+    &-success {
+        @include set-bg(color(success))
+    }
+
+    &-dark {
+        @include set-bg(color(dark))
+    }
+
+    &-danger {
+        @include set-bg(color(danger))
+    }
+
+    &-white {
+        @include set-bg(color(white));
+        border: #ccc 1px solid;
+    }
+}
+
+
+//buttons
+.btn {
+    display: inline-block;
+    background: color(light);
+    color: #333;
+    padding: 0.4rem 1.3rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: .5rem;
+    outline: none;
+    transition: all .5s ease-in;
+
+    &.btn-primary {
+        @include set-bg(color(primary));
+
+        &:hover {
+            background-color: lighten(color(primary), 5%);
+        }
+    }
+
+    &.btn-dark {
+        @include set-bg(color(dark));
+
+        &:hover {
+            background-color: lighten(color(dark), 5%);
+        }
+    }
+
+    &.btn-success {
+        @include set-bg(color(success));
+
+        &:hover {
+            background-color: lighten(color(success), 5%);
+        }
+    }
+
+    &.btn-danger {
+        @include set-bg(color(danger));
+
+        &:hover {
+            background-color: lighten(color(danger), 5%);
+        }
+    }
+
+    &:hover {
+        background: lighten(color(dark), 20%);
+        color: #fff;
+    }
+}
+
+//alerts
+.alert {
+    padding: .8rem;
+    margin: 1rem;
+    opacity: .9;
+    background: #fff;
+    color: #333;
+
+    &.alert-primary {
+        @include set-bg(color(primary))
+    }
+
+    &.alert-dark {
+        @include set-bg(color(dark))
+    }
+
+    &.alert-success {
+        @include set-bg(color(success))
+    }
+
+    &.alert-danger {
+        @include set-bg(color(danger))
+    }
+}
+
+.dark-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
