@@ -39,6 +39,12 @@
     border-radius: 50%;
 }
 
+.line {
+    height: 1px;
+    background: #ccc;
+    margin: .3rem 0;
+}
+
 //Background
 .bg {
     &-primary {
@@ -67,6 +73,34 @@
     }
 }
 
+.badge {
+    font-size: .8rem;
+    padding: .2rem;
+    text-align: center;
+    margin: .3rem;
+    background: color(light);
+    color: #333;
+
+    &.badge-primary {
+        @include set-bg(color(primary))
+    }
+
+    &.badge-dark {
+        @include set-bg(color(dark))
+    }
+
+    &.badge-success {
+        @include set-bg(color(success))
+    }
+
+    &.badge-light {
+        @include set-bg(color(light))
+    }
+
+    &.badge-danger {
+        @include set-bg(color(danger))
+    }
+}
 
 //buttons
 .btn {
@@ -151,4 +185,17 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .6);
+}
+
+.table {
+
+    th,
+    td {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    th {
+        background: color(light);
+    }
 }

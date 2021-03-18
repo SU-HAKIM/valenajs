@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./dist/scss/index.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar bg-dark">
+        <h1><a href="#"><i class="fas fa-code"></i>DevConnector</a></h1>
+        <ul>
+            <li><a href="profiles.html">Developers</a></li>
+            <li><a href="post.html">Posts</a></li>
+            <li>
+                <a href="dashboard.html">
+               <i class="fas fa-user"></i> <span class='hide-sm'>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="login.html">
+               <i class="fas fa-sign-out-alt"></i> <span class='hide-sm'>Dashboard</span></a>
+            </li>
+        </ul>
+    </nav>
+    <section class="container">
+        <h1 class="large text-primary">
+            Dashboard
+        </h1>
+        <p class="lead"><i class="fas fa-user"></i>Welcome SU Hakim</p>
+        <div class="dash-buttons">
+            <a href="create-profile.html" class='btn'><i class="fas fa-user-circle text-primary"></i>
+            Edit Profile</a>
+            <a href="create-profile.html" class='btn'><i class="fab fa-black-tie text-primary"></i>
+            Add Experience</a>
+            <a href="create-profile.html" class='btn'><i class="fas fa-graduation-cap text-primary"></i>
+            Add Education</a>
+        </div>
+
+        <h2 class="my-2">
+            Experience Credentials
+        </h2>
+        <table class='table'>
+            <thead>
+                <tr>
+                    <th>
+                        Company
+                    </th>
+                    <th class='hide-sm'>
+                        Title
+                    </th>
+                    <th class='hide-sm'>
+                        Years
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Microsoft</td>
+                    <td class='hide-sm'>Senior web developer</td>
+                    <td class='hide-sm'>Oct 2011 - Current</td>
+                    <td>
+                        <button class="btn btn-primary">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sun Microsystems</td>
+                    <td class='hide-sm'>Senior web developer</td>
+                    <td class='hide-sm'>Oct 2004 - Nov 2009</td>
+                    <td>
+                        <button class="btn btn-primary">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Education -->
+        <h2 class="my-2">
+            Education Credentials
+        </h2>
+        <table class='table'>
+            <thead>
+                <tr>
+                    <th>
+                        School
+                    </th>
+                    <th class='hide-sm'>
+                        Degree
+                    </th>
+                    <th class='hide-sm'>
+                        Years
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ABC University</td>
+                    <td class='hide-sm'>web development</td>
+                    <td class='hide-sm'>Oct 1999 - 2003</td>
+                    <td>
+                        <button class="btn btn-primary">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="my-2">
+            <button class="btn btn-danger">
+                <i class="fas fa-minus"></i> Delete account
+            </button>
+        </div>
+    </section>
+
+</body>
+
+<script type='module' src="./dist/js/index.js"></script>
+</html>
